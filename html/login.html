@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozamiya shop</title>
+    <link rel="stylesheet" href="../css1/login.css">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Tote bag</h2>
+        <nav class="navigation">
+            <a href="../html/inde.html">Home</a>
+            <a href="../html/about.html">About</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Send a message</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Contact us</h2>
+            <form action="#"  onsubmit="sendEmail(); reset(); return false;">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="name" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
+                    <input id="message" required>
+                    <label>Message</label>
+                </div>
+                <button type="submit" class="btn">Send</button>
+                <div class="login-register">
+                        <p>Do you finish? <a href="#" class="register-link">Done</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Thanks</h2>
+            <h3>Thank you for your visit, have a nice day</h3> 
+            <div class="login-register">
+                <p>See you soon!! <a href="#" class="login-link">Go back</a></p>
+            </div>
+        </div>
+    </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js1/login.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "8ea08ddf-bb99-4bf7-8422-419c6e6fa43a",
+                To : 'totebags2000@gmail.com',
+                From : 'metaaitmhend@gmail.com',
+                Subject : "Buy a Bug",
+                Body : "Name :" + document.getElementById("name").value
+                    + "<br> Email : " + document.getElementById("email").value 
+                    + "<br> Message : " + document.getElementById("message").value 
+            }).then(
+            message => Swal.fire(
+                            'Good job!',
+                            'You clicked the button!',
+                            'success'
+                        )
+            );
+        }
+    </script>
+</body>
+</html>
