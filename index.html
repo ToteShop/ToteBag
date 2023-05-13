@@ -14,63 +14,18 @@
         <nav class="navigation">
             <a href="#" class="navigation1">Home</a>
             <a href="./html/about.html" class="navigation1">About</a>
-            <a href="#main"><button class="btnLogin-popup">Contact</button></a>
+            <a href= "./html/msg.html" class="navigation1">Contact</a>
         </nav>
     </header>
-    <section class="main" id="main">
+    <section class="main">
         <div>
-            <h2>Welcome to your world<br><span>enjoy</span></h2>
+            <h3>Welcome to your world<br><span>enjoy</span></h3>
             <h3>we are making happiness </h3>
-            <a href="#projects" class="main-btn"></a>
             <div class="social-icons">
                 <a href="https://instagram.com/tote_bags_ma?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100090214845148" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
-        <div class="wrapper">
-            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-            <div class="form-box login">
-                <h2>Contact us</h2>
-                <form action="#"  onsubmit="sendEmail(); reset(); return false;">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="text" id="name" required>
-                        <label>Username</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" id="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
-                        <input id="message" required>
-                        <label>Message</label>
-                    </div>
-                    <button type="submit" class="btn">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="./js1/login.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail(){
-                Email.send({
-                    SecureToken: "8ea08ddf-bb99-4bf7-8422-419c6e6fa43a",
-                    To : 'totebags2000@gmail.com',
-                    From : 'naitmoussayassine2@gmail.com',
-                    Subject : "Buy a Bug",
-                    Body : "Name :" + document.getElementById("name").value
-                        + "<br> Email : " + document.getElementById("email").value 
-                        + "<br> Message : " + document.getElementById("message").value 
-                }).then(
-                message => alert("Message Sent Succesfully")
-                );
-            }
-        </script>
     </section>
     <section class=cards id="myData">
         <h2 class="section-title">Shop Products</h2>
@@ -212,7 +167,5 @@
     <footer class="footer">
         <p>Copyright&copy; 2023-2030</p>
     </footer>
-
-    <script src="./js1/index.js"></script>
 </body>
 </html>
