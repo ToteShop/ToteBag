@@ -19,12 +19,12 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 100px;
+    padding: 10px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    background: url(../background/slovenia-1975396_960_720.jpg) no-repeat;
+    background: rgb(245 160 207);
     background-size: cover;
 }
 .logo{
@@ -38,7 +38,7 @@ header{
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .navigation a::after{
     content: '';
@@ -99,7 +99,7 @@ header{
 .wrapper{
     position: relative;
     width: 900px;
-    height: 600px;
+    height: 500px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
@@ -107,20 +107,64 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform .5s ease, height .2s ease;
-    padding-top: 80px;
 }
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 1023px) {
     header {
-      padding: 5px;
+      padding: 12px 20px;
     }
-    .navigation {
-      flex-direction: column;
-      align-items: left;
+    .wrapper{
+        width: 600px;
+        height: 200px;
     }
-    .navigation a {
-      margin: 5px 0;
+    .form-box h2{
+        font-size: 0.8rem;
     }
+    .form-box h3{
+        font-size: 0.6rem;
+    }
+    .social-icons a{
+        font-size: 0.9rem;
+    }
+}
+@media  screen and (max-width: 700px){
+    header {
+        padding: 1px 4px;
+      }
+      .wrapper{
+          width: 200px;
+          height: 130px;
+      }
+      .form-box h2{
+          font-size: 0.5rem;
+      }
+      .form-box h3{
+          font-size: 0.3rem;
+      }
+      .social-icons a{
+          font-size: 0.5rem;
+      }
+}
+@media  screen and (max-width: 400px){
+    
+    body{
+        font-size: 12px;
+    }
+    header {
+        padding: 1px 4px;
+      }
+      .wrapper{
+          width: 150px;
+          height: 90px;
+      }
+      .form-box h2{
+          font-size: 0.3rem;
+      }
+      .form-box h3{
+          font-size: 0.15rem;
+      }
+      .social-icons a{
+          font-size: 0.2rem;
+      }
 }
 .navigation .navigation1{
     position: relative;
