@@ -131,17 +131,17 @@ header{
         padding: 1px 4px;
       }
       .wrapper{
-          width: 200px;
-          height: 130px;
+          width: 280px;
+          height: 190px;
       }
       .form-box h2{
-          font-size: 0.5rem;
+          font-size: 0.7rem;
       }
       .form-box h3{
-          font-size: 0.3rem;
+          font-size: 0.5rem;
       }
       .social-icons a{
-          font-size: 0.5rem;
+          font-size: 0.7rem;
       }
 }
 @media  screen and (max-width: 400px){

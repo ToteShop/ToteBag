@@ -130,17 +130,17 @@ header{
         font-size: 0.2rem;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 500px){
     
     body{
-        font-size: 12px;
+        font-size: 9px;
     }
     header {
         padding: 1px 4px;
     }
     .wrapper{
-        width: 250px;
-        height: 380px;
+        width: 200px;
+        height: 300px;
         box-shadow: 0 0 13px rgba(0, 0, 0, .5);
         background: transparent;
         border: 2px solid rgba(255, 255, 255, .5);
@@ -162,14 +162,14 @@ header{
 @media (max-width: 400px){
     
     body{
-        font-size: 12px;
+        font-size: 5px;
     }
     header {
         padding: 1px 4px;
     }
     .wrapper{
-        width: 200px;
-        height: 300px;
+        width: 100px;
+        height: 200px;
         box-shadow: 0 0 7px rgba(0, 0, 0, .5);
         background: transparent;
         border: 2px solid rgba(255, 255, 255, .5);
@@ -179,13 +179,13 @@ header{
         align-items: center;
     }
     .form-box h2{
-        font-size: 0.3rem;
+        font-size: 0.2rem;
     }
     .form-box h3{
-        font-size: 0.15rem;
+        font-size: 0.1rem;
     }
     .social-icons a{
-        font-size: 0.2rem;
+        font-size: 0.1rem;
     }
 }
 .form-box h2{
