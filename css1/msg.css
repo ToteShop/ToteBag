@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: 100vh;
     background: url(../background/slovenia-1975396_960_720.jpg) no-repeat;
     background-size: cover;
 }
@@ -29,26 +29,11 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 200px;
-    display: flex;
-    justify-content: space-between;
+    padding: 8px 200px;
     align-items: center;
     z-index: 99;
-    background: rgb(245 160 207);
+    background: rgb(62 41 141);
     background-size: cover;
-}
-.logo{
-    font-size: 2rem;
-    color: #fff;
-    user-select: none;
-}
-.navigation .navigation1{
-    position: relative;
-    font-size: 1.1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
 }
 .input-box{
     position: relative;
@@ -102,12 +87,12 @@ header{
     font-weight: 500;
 }
 @media (max-width: 1023px){
-    
-    body{
-        font-size: 12px;
-    }
     header {
-        padding: 1px 4px;
+        padding: 8px 20px;
+    }
+    nav .logo{
+        font-size: 1.8rem;
+        padding-right: 150px;
     }
     .wrapper{
         width: 300px;
@@ -129,63 +114,14 @@ header{
     .social-icons a{
         font-size: 0.2rem;
     }
-}
-@media (max-width: 500px){
-    
-    body{
-        font-size: 9px;
+    .navigation .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
-    header {
-        padding: 1px 4px;
-    }
-    .wrapper{
-        width: 200px;
-        height: 300px;
-        box-shadow: 0 0 13px rgba(0, 0, 0, .5);
-        background: transparent;
-        border: 2px solid rgba(255, 255, 255, .5);
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .form-box h2{
-        font-size: 0.3rem;
-    }
-    .form-box h3{
-        font-size: 0.15rem;
-    }
-    .social-icons a{
-        font-size: 0.2rem;
-    }
-}
-@media (max-width: 400px){
-    
-    body{
-        font-size: 5px;
-    }
-    header {
-        padding: 1px 4px;
-    }
-    .wrapper{
-        width: 100px;
-        height: 200px;
-        box-shadow: 0 0 7px rgba(0, 0, 0, .5);
-        background: transparent;
-        border: 2px solid rgba(255, 255, 255, .5);
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .form-box h2{
-        font-size: 0.2rem;
-    }
-    .form-box h3{
-        font-size: 0.1rem;
-    }
-    .social-icons a{
-        font-size: 0.1rem;
+    .openMenu{
+        display: block;
     }
 }
 .form-box h2{
@@ -203,4 +139,98 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding: 30px;
+    background-color: rgb(62 41 141);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+nav .mainMenu li a:hover{
+    background: none;
+    color: rgb(225, 0, 191);
+}
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu, .icons a{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+.fa-facebook:hover{color: rgb(0, 110, 225);}
+.fa-instagram:hover{color: rgb(225, 0, 191);}
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor:pointer;
+}
+@media(max-width: 800px){
+    nav .logo{
+        font-size: 1rem;
+        padding-right: 230px;
+    }
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(62 41 141);
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu{
+        display: block;
+    }
+    nav .mainMenu li a:hover{
+        background: none;
+        color: rgb(225, 0, 191);
+        font-size: 1.6rem;
+    }
+    .icons a{
+        display: inline-block;
+        padding: 12px;
+        text-decoration: none;
+    }
 }

@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: 100vh;
     background: url(../background/slovenia-1975396_960_720.jpg) no-repeat;
     background-size: cover;
 }
@@ -19,43 +19,11 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 200px;
-    display: flex;
-    justify-content: space-between;
+    padding: 8px 200px;
     align-items: center;
     z-index: 99;
-    background: rgb(245 160 207);
+    background: rgb(62 41 141);
     background-size: cover;
-}
-.logo{
-    font-size: 2rem;
-    color: #fff;
-    user-select: none;
-}
-.navigation a {
-    position: relative;
-    font-size: 1.1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 30px;
-}
-.navigation a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-.navigation a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
 }
 .mainContent{
     text-align: center;
@@ -63,28 +31,15 @@ header{
     margin: 20px;
     height: 150px;
 }
-.content , .content1 , .content2{
-    text-align: center;
-    color: #fff;
-    margin: 20px;
-}
-.container .content1{
-    padding-bottom: 20px;
-}
-.container .content2{
-    padding-top: 50px;
-}
 .social-icons a{
     color: #fff;
     font-size: 1.7em;
     text-decoration: none;
     position: absolute;
-    
 }
 .fa-instagram{
     left: 47%;
 }
-
 .fa-instagram:hover{color: rgb(225, 0, 191);}
 .form-box h2{
     font-size: 2.5em;
@@ -110,7 +65,11 @@ header{
 }
 @media  screen and (max-width: 1023px) {
     header {
-      padding: 12px 20px;
+        padding: 8px 20px;
+    }
+    nav .logo{
+        font-size: 1.8rem;
+        padding-right: 150px;
     }
     .wrapper{
         width: 600px;
@@ -125,69 +84,123 @@ header{
     .social-icons a{
         font-size: 0.9rem;
     }
-}
-@media  screen and (max-width: 700px){
-    header {
-        padding: 1px 4px;
-      }
-      .wrapper{
-          width: 280px;
-          height: 190px;
-      }
-      .form-box h2{
-          font-size: 0.7rem;
-      }
-      .form-box h3{
-          font-size: 0.5rem;
-      }
-      .social-icons a{
-          font-size: 0.7rem;
-      }
-}
-@media  screen and (max-width: 400px){
-    
-    body{
-        font-size: 12px;
+    .navigation{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(62 41 141);
+        display: none;
     }
-    header {
-        padding: 1px 4px;
-      }
-      .wrapper{
-          width: 150px;
-          height: 90px;
-      }
-      .form-box h2{
-          font-size: 0.3rem;
-      }
-      .form-box h3{
-          font-size: 0.15rem;
-      }
-      .social-icons a{
-          font-size: 0.2rem;
-      }
+    .navigation .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+    }
+
 }
-.navigation .navigation1{
-    position: relative;
-    font-size: 1.1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-.navigation .navigation1::after{
-    content: '';
-    position: absolute;
+.footer{
+    position: fixed;
+    bottom: 0;
     left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
+    right: 0;
+    height: auto;
+    padding: 30px;
+    background-color: rgb(62 41 141);
+    display: flex;
+    justify-content: center;
+    color: #fff;
 }
-.navigation a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
+
+
+
+
+
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+nav .mainMenu li a:hover{
+    background: none;
+    color: rgb(225, 0, 191);
+}
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu, .icons a{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+.fa-facebook:hover{color: rgb(0, 110, 225);}
+.fa-instagram:hover{color: rgb(225, 0, 191);}
+nav .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor:pointer;
+}
+@media(max-width: 800px){
+    nav .logo{
+        font-size: 1rem;
+        padding-right: 230px;
+    }
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(62 41 141);
+        background-attachment: scroll;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display: block;
+    }
+    nav .mainMenu li a:hover{
+        background: none;
+        color: rgb(225, 0, 191);
+        font-size: 1.6rem;
+    }
+    .icons a{
+        display: inline-block;
+        padding: 12px;
+        text-decoration: none;
+    }
 }
