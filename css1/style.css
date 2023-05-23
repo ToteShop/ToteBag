@@ -342,4 +342,16 @@ nav .logo{
     .section-title{
         font-size: 1rem;
     }
+    .footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        padding: 15px;
+        background-color: rgb(138 107 255);
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    }
 }

@@ -208,4 +208,20 @@ nav .logo{
         padding-bottom: 5px;
         padding-top: 5px;
     }
+    .wrapper{
+        width: 600px;
+        height: 250px;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        padding: 15px;
+        background-color: rgb(138 107 255);
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    }
 }
