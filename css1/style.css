@@ -291,6 +291,7 @@ nav .logo{
 @media  screen and (max-width: 800px){
     nav .logo{
         font-size: 1rem;
+        padding-top: 17px;
     }
     nav .mainMenu{
         height: 100vh;
