@@ -277,7 +277,7 @@ nav .logo{
         line-height: 57px;
     }
     .footer{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
