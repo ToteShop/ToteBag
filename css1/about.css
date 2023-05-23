@@ -76,6 +76,7 @@ header{
     }
     .form-box h2{
         font-size: 0.8rem;
+        padding-bottom: 10px;
     }
     .form-box h3{
         font-size: 0.6rem;
@@ -211,9 +212,10 @@ nav .logo{
         padding-top: 5px;
     }
     .wrapper{
-        width: 240px;
+        width: 420px;
         height: 250px;
         box-shadow: 0 0 10px #fff;
+
     }
     .footer{
         position: fixed;
