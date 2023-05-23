@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: url(../background/slovenia-1975396_960_720.jpg) no-repeat;
+    background: url(../background/pexels-pixabay-414727.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ header{
     padding: 8px 200px;
     align-items: center;
     z-index: 99;
-    background: rgb(62 41 141);
+    background: rgb(138 107 255);
     background-size: cover;
 }
 section {
@@ -50,7 +50,7 @@ section {
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: rgb(62 41 141);
+    color: rgb(138 107 255);
     font-size: 4em;
     font-weight: 600;
 }
@@ -70,7 +70,7 @@ section {
 .title {
     display: flex;
     justify-content: center;
-    color: rgb(62 41 141);
+    color: rgb(138 107 255);
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
@@ -190,7 +190,7 @@ img{
     font-weight: 600;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: rgb(62 41 141);
+    color: rgb(138 107 255);
 }
 
 .product-img{
@@ -203,7 +203,7 @@ img{
     right: 0;
     height: auto;
     padding: 30px;
-    background-color: rgb(62 41 141);
+    background-color: rgb(138 107 255);
     display: flex;
     justify-content: center;
     color: #fff;
@@ -214,7 +214,6 @@ img{
     }
     nav .logo{
         font-size: 1.8rem;
-        padding-right: 150px;
     }
     .main h2{
     font-size: 1.6em;
@@ -292,7 +291,6 @@ nav .logo{
 @media  screen and (max-width: 800px){
     nav .logo{
         font-size: 1rem;
-        padding-right: 230px;
     }
     nav .mainMenu{
         height: 100vh;
@@ -304,7 +302,7 @@ nav .logo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgb(62 41 141);
+        background: rgb(138 107 255);
         transition: top 1s ease;
         display: none;
     }
@@ -329,18 +327,19 @@ nav .logo{
         text-decoration: none;
     }
     .main h2{
-        font-size: 1em;
+        font-size: 1.25em;
     }
     .main h2 span{
-        font-size: 1.6em;
+        font-size: 1.9em;
     }
     .main h3{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .social-icons a{
-        font-size: 0.7em;
+        font-size: 1.3em;
+        padding-left: 20px;
     }
     .section-title{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }

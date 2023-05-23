@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../background/slovenia-1975396_960_720.jpg) no-repeat;
+    background: url(../background/pexels-pixabay-414727.jpg) no-repeat;
     background-size: cover;
 }
 header{
@@ -22,7 +22,7 @@ header{
     padding: 8px 200px;
     align-items: center;
     z-index: 99;
-    background: rgb(62 41 141);
+    background: rgb(138 107 255);
     background-size: cover;
 }
 .mainContent{
@@ -58,7 +58,6 @@ header{
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +68,6 @@ header{
     }
     nav .logo{
         font-size: 1.8rem;
-        padding-right: 150px;
     }
     .wrapper{
         width: 600px;
@@ -94,7 +92,7 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgb(62 41 141);
+        background: rgb(138 107 255);
         display: none;
     }
     .navigation .closeMenu{
@@ -115,7 +113,7 @@ header{
     right: 0;
     height: auto;
     padding: 30px;
-    background-color: rgb(62 41 141);
+    background-color: rgb(138 107 255);
     display: flex;
     justify-content: center;
     color: #fff;
@@ -167,7 +165,6 @@ nav .logo{
 @media(max-width: 800px){
     nav .logo{
         font-size: 1rem;
-        padding-right: 230px;
     }
     nav .mainMenu{
         height: 100vh;
@@ -179,7 +176,7 @@ nav .logo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgb(62 41 141);
+        background: rgb(138 107 255);
         background-attachment: scroll;
         transition: top 1s ease;
         display: none;
@@ -202,5 +199,13 @@ nav .logo{
         display: inline-block;
         padding: 12px;
         text-decoration: none;
+    }
+    .form-box h2{
+        font-size: 1.2rem;
+    }
+    .form-box h3{
+        font-size: 0.9rem;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 }
