@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 body{
     display: flex;
@@ -36,7 +35,6 @@ header{
     font-size: 1.7em;
     text-decoration: none;
     position: absolute;
-    padding-top: 30px;
 }
 .fa-instagram{
     left: 47%;
@@ -85,6 +83,7 @@ header{
     }
     .social-icons a{
         font-size: 0.9rem;
+        padding-top: 40px;
     }
     .navigation{
         height: 100vh;
@@ -204,6 +203,10 @@ nav .logo{
         display: inline-block;
         padding: 12px;
         text-decoration: none;
+    }
+    .social-icons a{
+        padding-top: 10px;
+        padding-top: 7px;
     }
     .form-box h2{
         font-size: 1.2rem;
